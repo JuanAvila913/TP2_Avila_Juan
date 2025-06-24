@@ -1,0 +1,83 @@
+    1  sudo fdisk /dev/sdd
+    2  free
+    3  free -h
+    4  sudo mkswap /dev/sdd1
+    5  free -h
+    6  sudo swapon /dev/sdd1
+    7  free -h
+    8  swapon -s
+    9  cat/proc/swaps
+   10  cat /proc/swaps
+   11  sudo fdisk /dev/sdc
+   12  sudo wipefs -a/dev/sdc1
+   13  sudo wipefs -a /dev/sdc1
+   14  sudo pvcreate /dev/sdd2 /dev/sdd3/ /dev/sdd5/ /dev/sdd6 /dev/sdc1 /dev/sdc2
+   15  pvcreate /dev/sdd3 /dev/sdd5 /dev/sdd6
+   16  sudo pvcreate /dev/sdd3 /dev/sdd5 /dev/sdd6
+   17  sudo pvcreate /dev/sdd5
+   18  sudo pvcreate /dev/sdd5 /dev/sdd6
+   19  sudo pvs
+   20  sudo fdisk -l /dev/sdd
+   21  sudo wipefs -a/dev/sdd2
+   22  sudo wipefs -a /dev/sdd2
+   23  sudo wipesfs -a /dev/sdd5
+   24  sudo wipefs -a /dev/sdd5
+   25  sudo wipefs /dev/sdd3
+   26  sudo wipefs /dev/sdd1
+   27  sudo wipefs /dev/sdd2
+   28  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6
+   29  exit
+   30  pvs
+   31  sudo pvs
+   32  sudo lvcreate -L 1G vg_web -n lv_web1
+   33  sudo lvs
+   34  sudo vgs
+   35  sudo fdisk -l
+   36  sudo pvcreate /dev/sdd5 /dev/sdd6
+   37  sudo fdisk /dev/sdc
+   38  free
+   39  free -h
+   40  sudo mkswap/dev/sdd1
+   41  sudo mkswap /dev/sdd1
+   42  sudo swapon /dev/sdd1
+   43  free -h
+   44  swapon -s
+   45  cat /proc/swaps
+   46  sudo fdisk /dev/sdc
+   47  sudo wipefs -a /dev/sdc1
+   48  sudo wipefs -a /dev/sdc2
+   49  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   50  sudo pvs
+   51  sudo vgcreate vg_datos /dev/sdc1 /dev/sdc2
+   52  sudo vgs
+   53  sudo pvs
+   54  sudo vgremove vg_datos
+   55  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   56  sudo pvs
+   57  sudo vgcreate vg_web /dev/sdc2
+   58  sudo pvs
+   59  sudo lvcreate -L 1G vg_web -n lv_web1
+   60  sudo pvcreate -L 1G vg_web -n lv_web2
+   61  sudo lvcreate -L 1G vg_web -n lv_web2
+   62  sudo lvcreate -L 512M vg_web -n lv_web3
+   63  sudo lvs
+   64  sudo lvremove /dev/vg_web/lv_web2
+   65  sudo lvcreate -L 512M vg_web -n lv_web2
+   66  sudo lvs
+   67  sudo pvs
+   68  sudo fdisk -l
+   69  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   70  sudo mkfs.ext4/dev/mapper/vg_web-lv_web2
+   71  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   72  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   73  sudo pvs > pvs.txt
+   74  sudo pvs
+   75  sudo pvs.txt
+   76  sudo pvs > pvs.txt
+   77  git clone git@github.com:JuanAvila913/TP2_Avila_Juan.git
+   78  git clone https://github.com/JuanAvila913/TP2_Avila_Juan.git
+   79  cd TP2_Avila_Juan
+   80  sudo pvs > pvs.txt
+   81  sudo vgs > vgs.txt
+   82  sudo lvs > lvs.txt
+   83  history > historial_lvm.txt
